@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "package-sorter"
+version = "0.1.0"
+description = "Package sorter for Thoughtful robotic automation factory"
+authors = ["Todd G. Nist"]
+license = "Apache"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pint = "^0.24.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
