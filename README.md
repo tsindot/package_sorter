@@ -13,6 +13,23 @@ This project implements a package sorting function for Thoughtful's robotic arm,
 - **Heavy Package**: A package is considered heavy if:
   - Its mass is greater than or equal to 20 kg
 
+## Prerequisites
+
+This project uses Poetry for dependency management. If you don't have Poetry installed, you can install it by following these steps:
+
+1. Install Poetry:
+   ```bash
+   curl -sSL https://install.python-poetry.org | python3 -
+   ```
+2. Verfiy the installation:
+   ```bash
+   poetry --version
+   ```
+
+   If Poetry is installed correctly, you should see the version number.
+
+For more information about Poetry, refer to the [official documentation](https://python-poetry.org/docs/).
+
 ## Installation
 
 To get started with the Package Sorter:
@@ -36,7 +53,7 @@ from package_sorter.sorter import sort, Stack
 result = sort(width_cm=100, height_cm=50, length_cm=80, mass_kg=15)
 print(f"The package should be placed in the {result.value} stack.")
 ```
-## Runnint Tests
+## Running Tests
 To run the test suite:
 
 ```bash
